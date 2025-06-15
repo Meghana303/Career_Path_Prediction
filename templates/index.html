@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Career Path Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Career Path Predictor</h1>
+        <form method="post" action="/predict">
+            <label for="GPA">GPA:</label>
+            <input type="number" name="GPA" step="0.01" required>
+
+            <label for="No_of_Projects">Number of Projects:</label>
+            <input type="number" name="No_of_Projects" required>
+
+            <label for="Internship_Experience">Internship Experience (Count):</label>
+            <input type="number" name="Internship_Experience" required>
+
+            <label for="Problem_Solving_Skill">Problem Solving Skill</label>
+            <select name="Problem_Solving_Skill" required>
+                <option value="2">Poor</option>
+                <option value="5">Average</option>
+                <option value="8">Good</option>
+                <option value="10">Excellent</option>
+            </select>
+
+            <label for="Hackathon_Participation">Hackathon Participation (Count):</label>
+            <input type="number" name="Hackathon_Participation" required>
+
+            <label for="Communication_Skills">Communication Skills</label>
+            <select name="Communication_Skills" required>
+                <option value="2">Poor</option>
+                <option value="5">Average</option>
+                <option value="8">Good</option>
+                <option value="10">Excellent</option>
+            </select>
+
+            <label for="Leadership">Leadership</label>
+            <select name="Leadership" required>
+                <option value="2">Poor</option>
+                <option value="5">Average</option>
+                <option value="8">Good</option>
+                <option value="10">Excellent</option>
+            </select>
+
+            <label for="Skill_Python">Python</label>
+            <select name="Skill_Python" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label for="Skill_Java">Java</label>
+            <select name="Skill_Java" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label for="Skill_SQL">SQL</label>
+            <select name="Skill_SQL" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label for="Skill_Design">UI/UX Design</label>
+            <select name="Skill_Design" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label for="Preferred_Tech_Track_AI">Preferred Tech Track - AI</label>
+            <select name="Preferred_Tech_Track_AI" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label for="Preferred_Tech_Track_Cyber">Preferred Tech Track - Cybersecurity</label>
+            <select name="Preferred_Tech_Track_Cyber" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label for="Preferred_Tech_Track_Data">Preferred Tech Track - Data</label>
+            <select name="Preferred_Tech_Track_Data" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label for="Preferred_Tech_Track_UIUX">Preferred Tech Track - UI/UX</label>
+            <select name="Preferred_Tech_Track_UIUX" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label for="Preferred_Tech_Track_Web_Dev">Preferred Tech Track - Web Dev</label>
+            <select name="Preferred_Tech_Track_Web_Dev" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <button type="submit">Predict Career Path</button>
+        </form>
+        {% if prediction %}
+            <div class="result">
+                Predicted Career Path: {{ prediction }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
