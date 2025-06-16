@@ -4,3 +4,8 @@ matplotlib
 xgboost
 seaborn
 scikit-learn
+fastapi
+uvicorn
+jinja2
+python-multipart
+joblib
