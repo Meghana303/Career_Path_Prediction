@@ -189,6 +189,15 @@ Deploy a full hosted demo
 
 Expand dataset quality
 
+## 👩‍💻 Author
+
+Neeraj Reddy (Neerajreddi)
+🔗 Github: https://github.com/neerajreddi
+
+Meghana (Meghana303)
+🔗 GitHub: https://github.com/Meghana303
+
+
 
 ---
 
