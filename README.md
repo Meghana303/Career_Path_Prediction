@@ -95,25 +95,25 @@ Career_Path_Prediction/
 
 ## 🚀 Running Locally  
 
-### **1️⃣ Clone the repo**
+### 1️⃣ Clone the repo**
 git clone https://github.com/Meghana303/Career_Path_Prediction.git
 cd Career_Path_Prediction
 
-## **2️⃣ Create a virtual environment
+## 2️⃣ Create a virtual environment
 python -m venv venv
 venv\Scripts\activate       # Windows
 source venv/bin/activate    # macOS/Linux
 
-3️⃣ Install dependencies
+##3️⃣ Install dependencies
 pip install -r requirements.txt
 
-4️⃣ Start FastAPI server
+##4️⃣ Start FastAPI server
 uvicorn main:app --reload
 
-5️⃣ Open UI
+##5️⃣ Open UI
 http://127.0.0.1:8000
 
-🌐 Deployment Notes
+##🌐 Deployment Notes
 
 You can deploy this FastAPI app on:
 
@@ -143,7 +143,7 @@ Start command:
 
 uvicorn main:app --host 0.0.0.0 --port $PORT
 
-🛠 Tech Stack
+##🛠 Tech Stack
 
 Languages:
 
@@ -177,7 +177,7 @@ GitHub
 
 Google Forms
 
-🌱 Future Improvements
+##🌱 Future Improvements
 
 Add hyperparameter tuning
 
