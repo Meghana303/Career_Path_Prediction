@@ -100,9 +100,9 @@ git clone https://github.com/Meghana303/Career_Path_Prediction.git
 cd Career_Path_Prediction
 
 ## 2️⃣ Create a virtual environment
-python -m venv venv
-venv\Scripts\activate       # Windows
-source venv/bin/activate    # macOS/Linux
+- python -m venv venv
+- venv\Scripts\activate       # Windows
+- source venv/bin/activate    # macOS/Linux
 
 ## 3️⃣ Install dependencies
 pip install -r requirements.txt
